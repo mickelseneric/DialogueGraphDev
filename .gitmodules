@@ -1,0 +1,3 @@
+[submodule "Assets/DialogueGraph"]
+	path = Assets/DialogueGraph
+	url = https://github.com/TeodorVecerdi/DialogueGraph.git
