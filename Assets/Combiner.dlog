@@ -1,6 +1,7 @@
 {
     "AssetGuid": "f000e81c865c5de498bc3d9e88fd2d0f",
     "IsBlackboardVisible": true,
+    "DialogueGraphVersion": "1.2.0",
     "nodes": [
         {
             "GUID": "862a8035-aae8-4b1b-a04e-d4157831b20a",
