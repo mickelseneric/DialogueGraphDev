@@ -1,0 +1,15 @@
+{
+    "name": "DialogueGraphDev.Editor",
+    "references": [
+        "GUID:88c608744485bf646beed5cc3dd91a6c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
