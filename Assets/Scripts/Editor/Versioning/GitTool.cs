@@ -16,10 +16,12 @@ namespace Dlog.Development {
             ExecuteGit(DialogueGraphPath, "add package.json");
             ExecuteGit(DialogueGraphPath, "add Resources/DialogueGraphVersion.asset");
             ExecuteGit(DialogueGraphPath, $"commit -m \"Bump Dialogue Graph version [{oldVersion} -> {newVersion}]\"");
+            ExecuteGit(DialogueGraphPath, $"tag -a {newVersion} -m \"[Auto Tag] Version {newVersion}\"");
+            ExecuteGit(DialogueGraphPath, $"push origin {newVersion}", 5000);
             
         }
 
-        private static string ExecuteGit(string repository, string command) {
+        private static string ExecuteGit(string repository, string command, int waitTime = -1) {
             var prc = new System.Diagnostics.Process {
                 StartInfo = {
                     FileName = "git.exe",
@@ -29,7 +31,8 @@ namespace Dlog.Development {
                 }
             };
             prc.Start();
-            prc.WaitForExit(maxWaitTime);
+            if (waitTime == -1) waitTime = maxWaitTime;
+            prc.WaitForExit(waitTime);
             return prc.StandardOutput.ReadToEnd();
         }
     }
