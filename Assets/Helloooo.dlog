@@ -5,7 +5,7 @@
     "nodes": [
         {
             "GUID": "c2c0f83b-a1f8-4d29-a77e-172f233efc9a",
-            "Type": "Dlog.SelfNode",
+            "Type": "DialogueGraph.SelfNode",
             "DrawState": {
                 "Position": {
                     "serializedVersion": "2",
@@ -27,7 +27,7 @@
         },
         {
             "GUID": "6cfabfa1-6dbd-4970-93df-5d555b97c13e",
-            "Type": "Dlog.NpcNode",
+            "Type": "DialogueGraph.NpcNode",
             "DrawState": {
                 "Position": {
                     "serializedVersion": "2",
